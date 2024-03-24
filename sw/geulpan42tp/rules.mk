@@ -4,14 +4,12 @@ BOOTLOADER = rp2040
 
 #split
 SPLIT_KEYBOARD = yes
+SERIAL_DRIVER = vendor
 
 #TrackPoint
 PS2_ENABLE = yes
 PS2_DRIVER = vendor
 PS2_MOUSE_ENABLE = yes
-
-#Split
-SERIAL_DRIVER = vendor
 
 #WS2812
 WS2812_DRIVER = vendor
