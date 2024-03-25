@@ -5,10 +5,14 @@
 #define SERIAL_USART_TX_PIN GP0    // USART TX pin
 #define SERIAL_USART_RX_PIN GP1    // USART RX pin
 
-// trackpad
+// trackpoint
 #define PS2_PIO_USE_PIO1
 #define PS2_CLOCK_PIN   GP3
 #define PS2_DATA_PIN    GP2
+
+// scrolling control. default value 2
+#define PS2_MOUSE_SCROLL_DIVISOR_H 24
+#define PS2_MOUSE_SCROLL_DIVISOR_V 24
 
 // WS2812
 // If WS2812 does not work, check soldering on the RGB(or R68) pad 
