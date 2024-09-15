@@ -14,11 +14,15 @@
 #define PS2_MOUSE_SCROLL_DIVISOR_H 24
 #define PS2_MOUSE_SCROLL_DIVISOR_V 24
 
+// if trackpoint btn can't using Drag, using "PS2_MOUSE_USE_REMOTE_MODE"
+// If the mouse cursor malfunctions, you can comment out "PS2_MOUSE_USE_REMOTE_MODE" and use QMK's mouse buttons.
+// #define PS2_MOUSE_USE_REMOTE_MODE 
+
 // WS2812
 // If WS2812 does not work, check soldering on the RGB(or R68) pad 
 #define WS2812_PIO_USE_PIO2 // Force the usage of PIO1 peripheral, by default the WS2812 implementation uses the PIO0 peripheral
 #define WS2812_DI_PIN GP23  // The pin connected to the data pin of the LEDs
-#define RGBLED_NUM 1        // The number of LEDs connected  
+#define RGBLIGHT_LED_COUNT 1 // The number of LEDs connected  
 
 // RGBLIGHT
 #define RGBLIGHT_SPLIT 
