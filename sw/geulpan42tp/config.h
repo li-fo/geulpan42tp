@@ -48,16 +48,19 @@
 
 #define MASTER_RIGHT //tp module installed on right side
 
+// Left - PCB 기준
 #define DIRECT_PINS { \
-    {GP9, GP8, GP7, GP6, GP5, GP4}, \
-    {GP15, GP14, GP13, GP12, GP11, GP10}, \
-    {GP21, GP20, GP19, GP18, GP17, GP16}, \
-    {GP27, GP26, GP22, GP28, NO_PIN, GP29}, \
+    {GP4, GP5, GP6, GP7, GP8, GP9}, \
+    {GP10, GP11, GP12, GP13, GP14, GP15}, \
+    {GP16, GP17, GP18, GP19, GP20, GP21}, \
+    {GP22, GP26, GP27, GP29, NO_PIN, GP28}, \
 }
 
+// Right - PCB & hanwired
 #define DIRECT_PINS_RIGHT { \
     {GP9, GP8, GP7, GP6, GP5, GP4}, \
     {GP15, GP14, GP13, GP12, GP11, GP10}, \
     {GP21, GP20, GP19, GP18, GP17, GP16}, \
     {GP27, GP26, GP22, GP28, NO_PIN, GP29}, \
 }
+
