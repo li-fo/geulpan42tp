@@ -42,6 +42,54 @@ void ps2_mouse_init_user() {
 }
 // trackpoint setting
 
+// ps/2 mouse movement activate mouse layer
+#if MOUSE_LAYER_AUTO_ENABLE
+    // Define mouse layer (should match the layer number in your keymap)
+    #define _MOUSE_LAYER 6
+
+    // Set mouse sensitivity
+    // #define MOUSE_SENSITIVITY 2
+
+    // Mouse inactivity timer (in milliseconds)
+    #define MOUSE_TIMEOUT 1000
+
+    static uint16_t mouse_timer = 0;
+    static bool mouse_layer_active = false;
+
+void ps2_mouse_moved_user(report_mouse_t *mouse_report) {
+    // Adjust mouse sensitivity
+    // mouse_report->x = (mouse_report->x * MOUSE_SENSITIVITY) / 2;
+    // mouse_report->y = (mouse_report->y * MOUSE_SENSITIVITY) / 2;
+
+    // Print debug information
+    // dprintf("Mouse: x=%d, y=%d, v=%d, h=%d, buttons=%02x\n",
+    //         mouse_report->x, mouse_report->y,
+    //         mouse_report->v, mouse_report->h,
+    //         mouse_report->buttons);
+
+     // Activate mouse layer when movement is detected
+        if (!mouse_layer_active) {
+            layer_on(_MOUSE_LAYER);
+            mouse_layer_active = true;
+        }
+
+        // Reset the timer
+        mouse_timer = timer_read();
+}
+#endif
+
+void matrix_scan_user(void) { // The very important timer.
+
+    #if MOUSE_LAYER_AUTO_ENABLE
+      // Check for mouse inactivity
+      if (mouse_layer_active && timer_elapsed(mouse_timer) > MOUSE_TIMEOUT) {
+          layer_off(_MOUSE_LAYER);
+          mouse_layer_active = false;
+      }
+    #endif
+    
+}
+// ps/2 mouse movement activate mouse layer
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // /*

@@ -18,6 +18,10 @@
 // If the mouse cursor malfunctions, you can comment out "PS2_MOUSE_USE_REMOTE_MODE" and use QMK's mouse buttons.
 // #define PS2_MOUSE_USE_REMOTE_MODE 
 
+// mouse movement activate mouse layer
+// 
+#define MOUSE_LAYER_AUTO_ENABLE FALSE
+
 // WS2812
 // If WS2812 does not work, check soldering on the RGB(or R68) pad 
 #define WS2812_PIO_USE_PIO2 // Force the usage of PIO1 peripheral, by default the WS2812 implementation uses the PIO0 peripheral

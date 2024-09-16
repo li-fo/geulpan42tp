@@ -14,10 +14,26 @@ and TrackPoint with 3 keys.
 - diodeless
 - Split and rgblight (YD-RP2040 internal WS2812)
 - tenting and palm rest
+- keycap : [KLP LAME MX](https://github.com/braindefender/KLP-Lame-Keycaps)
+
+### Ref Links
+
+- [How to integrate a trackpoint in a mechanical keyboard](https://github.com/alonswartz/trackpoint)
+- [TrackPoint](https://github.com/joric/jorne/wiki/Trackpoint)
+- [TrackPoint Hardware from deskthority](https://deskthority.net/wiki/TrackPoint_Hardware)
+- [TrackPoint System Version 4.0 Engineering Specification](https://blogs.epfl.ch/icenet/documents/Ykt3Eext.pdf)
+
+
 
 ## Caution
 
-Although I made and am currently using this, there appears to be a bug affecting the trackpoint operation. Therefore, unless using a trackpoint is essential for you, it may be better to consider a different split keyboard.
+Although I made this and am currently using it, there appears to be a bug affecting the trackpoint operation. Therefore, unless using a trackpoint is essential for you, it may be better to consider a different split keyboard.
+
+### Other Split keyboard with integrated trackpoint
+
+- [TPS42](https://github.com/crehmann/TPS42)
+- [Santoku Keyboard Kit](ttps://gestaltinput.com/products/santoku-keyboard-kit-black)
+
 
 
 ## Images
