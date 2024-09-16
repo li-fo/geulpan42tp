@@ -32,7 +32,7 @@ Although I made this and am currently using it, there appears to be a bug affect
 ### Other Split keyboard with integrated trackpoint
 
 - [TPS42](https://github.com/crehmann/TPS42)
-- [Santoku Keyboard Kit](ttps://gestaltinput.com/products/santoku-keyboard-kit-black)
+- [Santoku Keyboard Kit](https://gestaltinput.com/products/santoku-keyboard-kit-black)
 
 
 
