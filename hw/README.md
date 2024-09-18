@@ -48,3 +48,22 @@ I have modified and created the [KLP Lame Sallde for MX](https://github.com/brai
 | Layer Height  | 0.1 | -   |
 | Support  | Tree Support  | -  |
 
+### Sodering Option
+
+![GeulPan42TP](../imgs/geulpan42tp_031.png)
+
+I'm primarily using the trackpoint attached on the right side by default, but I've made it possible to choose between master and slave for those who want to attach the trackpoint on the left side. However, I haven't tested it with the trackpoint mounted on the left side. 
+
+
+1. Master or Slave
+    -  I have set it up so that the side with the trackpoint installed is the master, and the side without it is the slave. Power is supplied from the master to the slave.
+    - By default, the right side is the master and the left side is the slave
+    - The default soldering position is marked as "▲"
+
+2. Mouse Button 
+    - The default soldering position is marked as "▲" and Using Trackpoint Mouse Button.
+    - You can use either the trackpoint's mouse buttons or the QMK mouse buttons.If the trackpoint mouse operation is not smooth, you can switch to the QMK mouse buttons.
+    - If using QMK mouse buttons, the left and right buttons can be used immediately by changing their soldering positions.
+    - To use the middle mouse button as a QMK mouse button, you need to desolder the RGB section of the yd-rp2040 board.
+
+   
