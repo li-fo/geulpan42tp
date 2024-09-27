@@ -20,10 +20,12 @@ TrackPoint Module : 2-piece Tracpoint for X240, X250, X260 X270
 | 4.7k  | 2  | 1206  |
 | 100k  | 1 | 1206  |
 | 2.2uF  | 1  | 1206  |
-| FFC 12 Pin Connector  | 1  | under contact |
+| FFC 12 Pin Connector*  | 1  | under contact  <br> if not a Molex 200528-0120, need to cut both ends of the cable |
 | FFC 8 Pin Connector  | 2  | under contact |
 | FFC 8 Pin Cable*  | 1  | reverse direction(right side, default) <br> forward direction (left side)  |
 | 6x6x3.5  | 6  | -  |
+| M2 x 3mm Philips flathead bolt | 2  | -  |
+
 
 If you're not using an FFC cable, you can also solder it as shown in the picture.
 

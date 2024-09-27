@@ -11,8 +11,8 @@
 #define PS2_DATA_PIN    GP2
 
 // scrolling control. default value 2
-#define PS2_MOUSE_SCROLL_DIVISOR_H 24
-#define PS2_MOUSE_SCROLL_DIVISOR_V 24
+// #define PS2_MOUSE_SCROLL_DIVISOR_H 24
+// #define PS2_MOUSE_SCROLL_DIVISOR_V 24
 
 // if trackpoint btn can't using Drag, using "PS2_MOUSE_USE_REMOTE_MODE"
 // If the mouse cursor malfunctions, you can comment out "PS2_MOUSE_USE_REMOTE_MODE" and use QMK's mouse buttons.
