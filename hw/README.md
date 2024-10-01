@@ -24,7 +24,7 @@ TrackPoint Module : 2-piece Tracpoint for X240, X250, X260 X270
 | FFC 8 Pin Connector  | 2  | under contact |
 | FFC 8 Pin Cable*  | 1  | reverse direction(right side, default) <br> forward direction (left side)  |
 | 6x6x3.5  | 6  | -  |
-| M2 x 3mm Philips flathead bolt | 2  | -  |
+| M2 x 4mm Philips flathead bolt | 2  | -  |
 
 
 If you're not using an FFC cable, you can also solder it as shown in the picture.
